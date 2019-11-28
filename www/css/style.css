@@ -1,0 +1,112 @@
+html,body{
+	height:100%;
+	padding:0px;
+	margin:0px;
+	font-family:sans-serif;
+	
+}
+body{
+	background-color: #272a27; 
+	background-color: -moz-radial-gradient(center, ellipse cover,  #272a27 0%, #191a19 100%);
+	background-color: -webkit-radial-gradient(center, ellipse cover,  #272a27 0%,#191a19 100%);
+	background-color: radial-gradient(ellipse at center,  #272a27 0%,#191a19 100%);
+	
+	background-image:url(../img/bg.png);
+	
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#272a27', endColorstr='#191a19',GradientType=1 );
+	color:#32aeae;
+	
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+
+
+#header{
+	line-height:50px;
+	background:#232937;
+	box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+	color:#CCCCCC;
+	font-size:14px;
+	text-align:center;
+}
+
+#lockImage{
+	width:150px;
+}
+
+#content{
+	padding:10px 20px;
+	text-align:center;
+}
+
+#pass{
+	padding:15px;
+	border:1px solid #666666;
+	width:100%;
+	box-sizing: border-box;
+	border-radius:5px;
+	outline:none;
+	
+	background: #101211;
+	background: -moz-linear-gradient(top,  #101211 0%, #2a2d2b 99%);
+	background: -webkit-linear-gradient(top,  #101211 0%,#2a2d2b 99%);
+	background: linear-gradient(to bottom,  #101211 0%,#2a2d2b 99%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#101211', endColorstr='#2a2d2b',GradientType=0 );
+
+	
+	color:#d7d7e1;
+	font-size:16px;
+	box-shadow:0px 0px 10px rgba(0,0,0,0.8);
+}
+
+#textBox{
+	padding:15px;
+	width:100%;
+	border:1px solid #666666;
+	box-sizing: border-box;
+	border-radius:5px;
+	height:200px;
+	outline:none;
+	background: #101211;
+	background: -moz-linear-gradient(top,  #101211 0%, #2a2d2b 99%);
+	background: -webkit-linear-gradient(top,  #101211 0%,#2a2d2b 99%);
+	background: linear-gradient(to bottom,  #101211 0%,#2a2d2b 99%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#101211', endColorstr='#2a2d2b',GradientType=0 );
+	color:#d7d7e1;
+	font-size:16px;
+	box-shadow:0px 0px 10px rgba(0,0,0,0.8);
+}
+
+.buttons{
+	display:inline-block;
+	padding:10px 15px 10px 35px;
+	background-color:#333333;
+	color:#BBBBBB;
+	border-radius:25px;
+	box-shadow:0px 0px 10px rgba(0,0,0,0.5),
+				0px 0px 20px rgba(0,0,0,0.8) inset;
+	border:1px solid #000000;
+	background-size:auto 15px;
+	background-repeat:no-repeat;
+	background-position:12px 48%;
+	margin:0px;
+}
+@media screen and (max-width: 360px){
+	.buttons{
+		padding:10px 15px 10px 15px;
+		background-image:none !important;
+	}
+}
+
+#encryptBtn{
+	float:left;
+	background-image:url(../img/locked_icon.png);
+}
+#decryptBtn{
+	background-image:url(../img/unlocked_icon.png);
+}
+#shareBtn{
+	float:right;
+	background-image:url(../img/send_icon.png);
+}
