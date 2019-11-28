@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0, minimum-scale=1" name="viewport">
+    <script src="js/aes.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<!--script>
+		var encrypted = CryptoJS.AES.encrypt("Message", "pass1", {format: JsonFormatter});
+		var decrypted = CryptoJS.AES.decrypt(encrypted.toString(), "pass1", {format: JsonFormatter});
+		console.log(encrypted.toString());
+		console.log(decrypted.toString(CryptoJS.enc.Utf8));
+	
+	
+	</script-->
+    
+
+</head>
+
+<body>
+
+
+	<!--div id="header">You are safe here</div-->
+	
+	
+	
+	<div id="content">
+		<div>
+			<img src="img/lock.png" id="lockImage">
+		</div>
+		You are safe here
+		<br><br>
+		<input type="password" id="pass" placeholder="Password" maxlength="150"><br>
+		<br>
+		<textarea id="textBox" placeholder="Put your text here!"></textarea><br>
+		<br>
+		<span class="buttons" id="encryptBtn" onclick="encrypt();">Encrypt</span>
+		<span class="buttons" id="decryptBtn" onclick="decrypt();">Decrypt</span>
+		<span class="buttons" id="shareBtn" onclick="send();">Send</span>
+	</div>
+</body>
+</html>
