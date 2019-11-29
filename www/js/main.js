@@ -9,13 +9,17 @@ var app = {
         app.receivedEvent('deviceready');
     },
     receivedEvent: function(id) {
-		document.getElementById("textBox").value = 'Started';
+		setTimeout(function(){
+			document.getElementById("textBox").value = 'Started';
+		}, 4000);
 		showBannerAd();
     }
 };
 app.initialize();
 
-
+setTimeout(function(){
+	document.getElementById("textBox").value = 'Started';
+}, 4000);
 
 
 
