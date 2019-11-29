@@ -72,8 +72,14 @@ function showBannerAd(){
 		autoShow: true,
 		overlap:false
 	});
-	admob.banner.prepare();
-	admob.banner.show();
+	setTimeout(function(){
+		admob.banner.prepare();
+	}, 3000);
+	setTimeout(function(){
+		admob.banner.show();
+	}, 6000);
+	
+	
 }
 //******************************* Admob ads (end)
 
