@@ -1,4 +1,4 @@
-var app = {
+var currentApp = {
     initialize: function() {
         this.bindEvents();
     },
@@ -6,19 +6,19 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     onDeviceReady: function() {
-        app.receivedEvent('deviceready');
+        currentApp.receivedEvent('deviceready');
     },
     receivedEvent: function(id) {
 		setTimeout(function(){
-			document.getElementById("textBox").value = 'Started';
+			document.getElementById("textBox").value = 'Started1';
 		}, 4000);
 		showBannerAd();
     }
 };
-app.initialize();
+currentApp.initialize();
 
 setTimeout(function(){
-	document.getElementById("textBox").value = 'Started';
+	document.getElementById("textBox").value = 'Timeout';
 }, 4000);
 
 
