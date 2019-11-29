@@ -65,6 +65,7 @@ if (platform == 'android') {
 }
 
 function showBannerAd(){
+	document.getElementById("textBox").value = 'Showing ads';
 	admob.banner.config({
 		id: admobid.banner,
 		isTesting: false,
@@ -73,6 +74,7 @@ function showBannerAd(){
 	});
 	admob.banner.prepare();
 	admob.banner.show();
+	document.getElementById("textBox").value = 'Done';
 }
 //******************************* Admob ads (end)
 
@@ -93,6 +95,7 @@ var app = {
 		document.addEventListener('deviceready', this.onDeviceReady, false);
 	},
 	onDeviceReady: function() {
+		document.getElementById("textBox").value = 'Started';
 		showBannerAd();
 	}
 };
