@@ -1,3 +1,24 @@
+var app = {
+    initialize: function() {
+        this.bindEvents();
+    },
+    bindEvents: function() {
+        document.addEventListener('deviceready', this.onDeviceReady, false);
+    },
+    onDeviceReady: function() {
+        app.receivedEvent('deviceready');
+    },
+    receivedEvent: function(id) {
+		document.getElementById("textBox").value = 'Started';
+		showBannerAd();
+    }
+};
+app.initialize();
+
+
+
+
+
 /*
 CryptoJS v3.1.2
 code.google.com/p/crypto-js
@@ -86,22 +107,6 @@ function handleOpenURL(url) {
 	document.getElementById("textBox").value = url;
 }
 //***************** Handling app start commands (end)
-
-
-
-//******* Initializing the app (start)
-var app = {
-	initialize: function() {
-		document.addEventListener('deviceready', this.onDeviceReady, false);
-	},
-	onDeviceReady: function() {
-		document.getElementById("textBox").value = 'Started';
-		showBannerAd();
-	}
-};
-app.initialize();
-//******* Initializing the app (end)
-
 
 
 
@@ -206,12 +211,3 @@ function decrypt(){
 	
 	document.getElementById("textBox").value = decryptedText;
 }
-
-
-function send(){
-	
-}
-
-
-
-
