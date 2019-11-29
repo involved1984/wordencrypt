@@ -3,19 +3,19 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.hokmonline.app"
-	versionCode	        = "1000071"
-        ios-CFBundleVersion     = "1000071"
-        version   = "1.0.6">
+        id        = "com.wordencrypt.app"
+	versionCode	        = "1000000"
+        ios-CFBundleVersion     = "1000000"
+        version   = "1.0.0">
 
-    <name>Hokm - Online</name>
+    <name>Word Encrypt - Encryption tiil</name>
 
     <description>
-        Hokm (AKA Court Piece) is the most played card game in Iran and other countries in the middle east.
+        Easily encrypt any text before sending to others
     </description>
 
-    <author href="http://www.behzad.se" email="info@behzad.se">
-        Behzad Rostami
+    <author href="http://www.wordencrypt.com" email="noreply@wordencrypt.com">
+        Word Encrypt
     </author>
 
     <!-- Define the main entry-point to the application -->
@@ -36,7 +36,7 @@
     <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
     <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
-    <preference name="phonegap-version" value="cli-8.1.1" />
+    <!--preference name="phonegap-version" value="cli-8.1.1" /-->
         
         
         
@@ -54,6 +54,7 @@
     <!--plugin name="cordova-plugin-network-information"/-->
     <!--plugin name="cordova-plugin-media"/-->
 	
+<!--
     <plugin name="cordova-plugin-geolocation"/>
     <plugin name="cordova-plugin-inappbrowser"/>
     <plugin name="cordova-plugin-whitelist"/>
@@ -62,7 +63,7 @@
     <plugin name="cordova-plugin-vibration"/>
 	
     <plugin     spec="https://github.com/involved1984/my-phonegap-audio.git"  source="git"/>
-        
+-->
         
     <gap:plugin name="cordova-plugin-admob-free" source="npm">
         <param name="ADMOB_APP_ID" value="ca-app-pub-2837280352619539~1949518178" />
