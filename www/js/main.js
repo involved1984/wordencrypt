@@ -207,16 +207,7 @@ var currentApp = {
     onDeviceReady: function() {
 		//showBannerAd();
 	    
-      admob.setOptions({
-        publisherId:           "pub-2837280352619539",  // Required
-        interstitialAdId:      "ca-app-pub-XXXXXXXXXXXXXXXX/IIIIIIIIII",  // Optional
-        autoShowBanner:        true,                                      // Optional
-        autoShowRInterstitial: false,                                     // Optional
-        autoShowRewarded:      false,                                     // Optional
-        tappxIdiOS:            "/XXXXXXXXX/Pub-XXXX-iOS-IIII",            // Optional
-        tappxIdAndroid:        "/XXXXXXXXX/Pub-XXXX-Android-AAAA",        // Optional
-        tappxShare:            0.5                                        // Optional
-      }); 
+      
 	    
 	    
 	    
