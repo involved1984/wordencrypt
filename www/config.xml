@@ -39,7 +39,6 @@
     <!--preference name="phonegap-version" value="cli-8.1.1" /-->
         
         
-        
     <!-- Define a specific version of PhoneGap to build into your app. -->
     <!-- <preference name="phonegap-version"       value="cli-6.0.0" /> -->
 
@@ -81,7 +80,7 @@
     </gap:plugin>
         
         
-    <gap:plugin name="cordova-plugin-x-socialsharing" source="npm"/>
+    <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" version="5.4.0" />
     
         
         
