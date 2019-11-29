@@ -1,28 +1,3 @@
-var currentApp = {
-    initialize: function() {
-        this.bindEvents();
-    },
-    bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
-    onDeviceReady: function() {
-        currentApp.receivedEvent('deviceready');
-    },
-    receivedEvent: function(id) {
-		setTimeout(function(){
-			document.getElementById("textBox").value = 'Started1';
-		}, 4000);
-		showBannerAd();
-    }
-};
-currentApp.initialize();
-
-setTimeout(function(){
-	document.getElementById("textBox").value = 'Timeout';
-}, 4000);
-
-
-
 /*
 CryptoJS v3.1.2
 code.google.com/p/crypto-js
@@ -90,7 +65,7 @@ if (platform == 'android') {
 }
 
 function showBannerAd(){
-	document.getElementById("textBox").value = 'Showing ads';
+	document.getElementById("textBox").value = 'Showing ads:' + platform;
 	admob.banner.config({
 		id: admobid.banner,
 		isTesting: false,
@@ -99,7 +74,6 @@ function showBannerAd(){
 	});
 	admob.banner.prepare();
 	admob.banner.show();
-	document.getElementById("textBox").value = 'Done';
 }
 //******************************* Admob ads (end)
 
@@ -215,3 +189,24 @@ function decrypt(){
 	
 	document.getElementById("textBox").value = decryptedText;
 }
+
+
+
+
+
+
+
+//********* Initializing the app (start)
+var currentApp = {
+    initialize: function() {
+        this.bindEvents();
+    },
+    bindEvents: function() {
+        document.addEventListener('deviceready', this.onDeviceReady, false);
+    },
+    onDeviceReady: function() {
+		showBannerAd();
+    }
+};
+currentApp.initialize();
+//********* Initializing the app (end)
