@@ -77,7 +77,6 @@
         
     <gap:plugin name="cordova-plugin-customurlscheme" source="npm">
         <param name="URL_SCHEME" value="wordencrypt" />
-        <param name="URL_SCHEME" value="wordencrypt.com" />
     </gap:plugin>
 	
         
@@ -206,8 +205,6 @@
     <allow-navigation href="*" />
     
 	<allow-intent href="wordencrypt:" />
-	<allow-intent href="wordencrypt.com" />
-	
         
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
