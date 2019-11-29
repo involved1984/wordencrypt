@@ -8,7 +8,7 @@
         ios-CFBundleVersion     = "1000000"
         version   = "1.0.0">
 
-    <name>Word Encrypt - Encryption tiil</name>
+    <name>Word Encrypt - Encryption tool</name>
 
     <description>
         Easily encrypt any text before sending to others
