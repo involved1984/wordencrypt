@@ -65,7 +65,7 @@ if (platform == 'android') {
 }
 
 function showBannerAd(){
-	document.getElementById("textBox").value = 'Showing ads:' + platform;
+	document.getElementById("textBox").value = 'Showing ads:' + platform + "     Admob Object type: " + (typeof admob);
 	admob.banner.config({
 		id: admobid.banner,
 		isTesting: false,
