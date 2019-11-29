@@ -64,14 +64,14 @@
     <plugin     spec="https://github.com/involved1984/my-phonegap-audio.git"  source="git"/>
 -->
         
-    <gap:plugin name="cordova-plugin-admob-free" source="npm">
+    <!--gap:plugin name="cordova-plugin-admob-free" source="npm">
         <param name="ADMOB_APP_ID" value="ca-app-pub-2837280352619539~5412697295" />
     </gap:plugin>
     <plugin name="cordova-admob-sdk">
         <variable name="PLAY_SERVICES_VERSION" value="16.0.0" />
-    </plugin>
-    <!--gap:plugin name="phonegap-admob" source="npm"/--> 
-        
+    </plugin-->
+    
+    <gap:plugin name="phonegap-admob" source="npm"/>    
         
         
         
