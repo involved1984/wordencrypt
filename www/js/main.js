@@ -205,33 +205,7 @@ var currentApp = {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     onDeviceReady: function() {
-		//showBannerAd();
-	    
-      
-	    
-	    
-	    
-	    
-	    
-	    
-      admob.createBannerView({publisherId: "ca-app-pub-2837280352619539/2247956832"});
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
+	showBannerAd();
     }
 };
 currentApp.initialize();
